@@ -1,0 +1,155 @@
+.verification-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 1rem;
+    background: linear-gradient(45deg, #1a1a1a, #2b2b2b);
+}
+
+.verification-box {
+    background: rgba(43, 43, 43, 0.9);
+    border: 2px solid #666;
+    border-radius: 15px;
+    padding: 3rem;
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+.verification-box h2 {
+    color: #00ffff;
+    margin-bottom: 2rem;
+    font-size: 2em;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+.input-group {
+    margin-bottom: 2rem;
+}
+
+#codeInput {
+    background: rgba(26, 26, 26, 0.8);
+    border: 2px solid #00ffff;
+    color: white;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-left: -1rem;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
+}
+
+.code-input:focus {
+    outline: none;
+    border-color: #00ffaa;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+}
+#output {
+    display: none;
+    color: rgb(0, 0, 0);
+    margin-left: 0rem;
+    background: #00ffff;
+    background: linear-gradient(45deg, #2d535a, #00ccff);
+    color: white;
+    border: none;
+    padding: 1rem 2.5rem;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    width: 100%;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(45, 90, 47, 0.3);
+}
+
+.verify-button {
+    background: linear-gradient(45deg, #2d5a2f, #3a7a3c);
+    color: white;
+    border: none;
+    padding: 1rem 2.5rem;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    width: 100%;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(45, 90, 47, 0.3);
+}
+
+.verify-button , #output:hover {
+    background: linear-gradient(45deg, #234624, #2d5a2f);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(45, 90, 47, 0.4);
+}
+
+.verify-button:active {
+    transform: translateY(1px);
+}
+
+.result-message {
+    margin-top: 1.5rem;
+    padding: 1.2rem;
+    border-radius: 10px;
+    display: none;
+    animation: fadeIn 0.5s ease;
+}
+
+.success {
+    background: linear-gradient(45deg, #2d5a2f, #3a7a3c);
+    color: white;
+    box-shadow: 0 4px 15px rgba(45, 90, 47, 0.3);
+}
+
+.error {
+    background: linear-gradient(45deg, #5a2d2d, #7a3c3c);
+    color: white;
+    box-shadow: 0 4px 15px rgba(90, 45, 45, 0.3);
+}
+
+.course-link {
+    color: #00ffff;
+    text-decoration: none;
+    font-weight: bold;
+    display: none;
+    margin-top: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.course-link:hover {
+    color: #00ffaa;
+    text-decoration: underline;
+}
+
+
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@media screen and (max-width: 768px){
+    .verification-box {
+        padding: 2rem;
+    }
+
+    .code-input {
+        font-size: 1rem;
+    }
+
+    .verify-button {
+        font-size: 1rem;
+    }
+    #output {
+        display: none;
+        color: rgb(0, 0, 0);
+        /* margin-left: 4.5rem; */
+    }
+}

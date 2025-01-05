@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Course Link</title>
+    <link rel="stylesheet" href="getlink.css">
+</head>
+<body>
+    <div class="verification-container">
+        <div class="verification-box">
+            <h2>Enter Your Access Code</h2>
+            <div class="input-group">
+                <input type="text" id="codeInput" placeholder="Enter code">
+                <button onclick="showcode()" class="verify-button">Submit</button>
+                <p id="o1" style="color: white;"></p>
+                <a href="https://drive.google.com/file/d/1W5uOhVtSlbzsNnk6SnrPD2gugyevReLK/view?usp=drive_link" target="_blank"><button id="output">Get Link</button></a>
+            </div>
+            <div id="resultMessage" class="result-message"></div>
+        </div>
+    </div>
+
+    <script src="frontend.js"></script>
+</body>
+</html>
