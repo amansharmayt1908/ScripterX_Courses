@@ -2,7 +2,7 @@
   "name": "course-verification-system",
   "version": "1.0.0",
   "description": "Course access code verification system",
-  "main": "backend.js",
+  "main": "server.js",
   "scripts": {
     "start": "node backend.js",
     "dev": "nodemon backend.js"

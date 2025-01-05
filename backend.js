@@ -1,7 +1,5 @@
 const express = require("express");
 const mongoose = require("mongoose"); // Add mongoose import
-mongoose.set('strictQuery', true);
-
 const path = require("path");
 const cors = require("cors"); // Add cors import
 const app = express();
