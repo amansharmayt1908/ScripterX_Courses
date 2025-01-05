@@ -17,13 +17,14 @@ app.get('*', (req, res) => {
 
 // MongoDB connection
 mongoose.connect(
-    "mongodb://localhost:27017/courses",
+    "mongodb+srv://amansharmayt19:nvrQpvCAPAWSEh9C@scripterx.7nhap.mongodb.net/courses?retryWrites=true&w=majority",
     {
         useNewUrlParser: true,
         useUnifiedTopology: true,
     }
 ).then(() => console.log("Connected to courses database"))
  .catch(err => console.log(err));
+
 
 // Define the schema and model for the "key" collection
 const keySchema = new mongoose.Schema({
