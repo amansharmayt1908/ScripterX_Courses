@@ -1,5 +1,13 @@
-// /api/verify-code.js
-const mongoose = require("mongoose");
+const express = require("express");
+const mongoose = require("mongoose"); // Add mongoose import
+const path = require("path");
+const cors = require("cors"); // Add cors import
+const app = express();
+
+// Middleware
+app.use(express.json());
+app.use(cors());
+
 
 const keySchema = new mongoose.Schema({
   code: Number,
