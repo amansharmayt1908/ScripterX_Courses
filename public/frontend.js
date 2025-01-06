@@ -18,7 +18,7 @@ async function showcode() {
         resultMessage.textContent = 'Verifying...';
         resultMessage.style.color = 'blue';
 
-        const response = await fetch('https://verify-code-mongodb.onrender.com', {
+        const response = await fetch('verify-code', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
