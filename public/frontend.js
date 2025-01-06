@@ -3,6 +3,7 @@ async function showcode() {
     const resultMessage = document.getElementById('resultMessage');
     const output = document.getElementById('output');
     const text = document.getElementById('o1');
+    const againgetlink = document.getElementById('againgetlink');
     // Add validation for empty input
     if (!codeInput) {
         resultMessage.textContent = 'Please enter a code';
@@ -34,12 +35,14 @@ async function showcode() {
         if (data.found) {
             output.style.display = 'block';
             o1.textContent = 'Sucessfully verified!';
-            
+            againgetlink.style.display = 'none';
             o1.style.color = 'green';
         } else if(!data.found) {
             output.style.display = 'none';
             o1.textContent = 'Invalid access code!';
             o1.style.color = 'red';
+            againgetlink.style.display = 'block';
+            
         }
         else{
             output.style.display = 'none';

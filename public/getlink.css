@@ -69,7 +69,7 @@
     box-shadow: 0 4px 15px rgba(45, 90, 47, 0.3);
 }
 
-.verify-button {
+.verify-button,#againgetlink {
     background: linear-gradient(45deg, #2d5a2f, #3a7a3c);
     color: white;
     border: none;

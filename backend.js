@@ -11,8 +11,14 @@ app.use(cors());
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.get('*', (req, res) => {
+app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
+app.get('/GetAccessCode', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'purchase.html'));
+});
+app.get('/GetLink', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'getlink.html'));
 });
 
 // MongoDB connection
